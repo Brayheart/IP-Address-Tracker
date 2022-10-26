@@ -9,7 +9,7 @@ function getInputValue() {
 }
 
 function IPsearch() {
-    fetch(`https://geo.ipify.org/api/v2/country,city?apiKey={{ github.APIKEY }}&ipAddress=` + searchTerm)
+    fetch('https://geo.ipify.org/api/v2/country,city?apiKey=at_6jeT3ldQdub1lvokmaoszVfILyjTz&ipAddress=' + searchTerm)
         .then((response) => response.json())
         .then((data) => {
             console.log(data)
