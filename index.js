@@ -9,12 +9,17 @@ function getInputValue() {
 }
 
 function IPsearch() {
-    fetch('https://geo.ipify.org/api/v2/country,city?apiKey=&ipAddress=' + searchTerm)
+    fetch(`https://geo.ipify.org/api/v2/country,city?apiKey={{ github.APIKEY }}&ipAddress=` + searchTerm)
         .then((response) => response.json())
         .then((data) => {
             console.log(data)
             lat = data.location.lat
             lng = data.location.lng
+
+            document.querySelector('#IPaddress').textContent = data.ip
+            document.querySelector('#location').textContent = data.location.region + ', ' + data.location.city + ' ' + data.location.postalCode
+            document.querySelector('#timezone').textContent = data.location.timezone
+            document.querySelector('#ISP').textContent = data.isp
             mapsearch()
     });
 }
