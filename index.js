@@ -1,3 +1,5 @@
+alert("Application will not work with addblock. Best used in incognito browser");
+
 let lat = ''
 let lng = ''
 let searchTerm = ''
