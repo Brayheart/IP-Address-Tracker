@@ -1,3 +1,18 @@
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+img {
+    width: -webkit-fill-available
+}
+
+#map { height: 100vh; }
+
 .master-container {
     position: relative;
     display: flex;
