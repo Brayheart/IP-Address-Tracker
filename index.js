@@ -1,5 +1,5 @@
-alert("Application will not work with addblock. Best used in incognito browser");
-
+// alert("Application will not work with addblock. Best used in incognito browser");
+console.log('here')
 let lat = ''
 let lng = ''
 let searchTerm = ''
@@ -17,7 +17,6 @@ function IPsearch() {
             console.log(data)
             lat = data.location.lat
             lng = data.location.lng
-
             document.querySelector('#IPaddress').textContent = data.ip
             document.querySelector('#location').textContent = data.location.region + ', ' + data.location.city + ' ' + data.location.postalCode
             document.querySelector('#timezone').textContent = data.location.timezone

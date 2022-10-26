@@ -81,3 +81,17 @@ input {
 .search-box-container {
     display: flex;
 }
+
+@media only screen and (max-width: 400px) {
+   .item-container {
+        flex-direction: column;
+   }
+
+   img {
+    height: 300px;
+   }
+
+   input {
+        width: 200px;
+   }
+}
