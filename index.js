@@ -1,4 +1,4 @@
-// alert("Application will not work with addblock. Best used in incognito browser");
+alert("Application will not work with addblock. Best used in incognito browser");
 console.log('here')
 let lat = ''
 let lng = ''
